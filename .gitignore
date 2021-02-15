@@ -1,0 +1,5 @@
+# node_modules 은 안올린다.
+# package.json 은 반드시 올려야한다.
+
+node_modules/
+dist/
