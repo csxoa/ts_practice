@@ -60,7 +60,6 @@ const getHashforBlock = (aBlock: Block) : string =>
         aBlock.data
         );
 
-// candidate block 과 previous block 을 불러와 비교하면서 validation 이 어떻게 돌아가는지 파악해보자
 const isBlockValid = (candidateBlock: Block, previousBlock: Block) : boolean => {
     if(!Block.validateStructure(candidateBlock)){
         return false;
@@ -75,7 +74,6 @@ const isBlockValid = (candidateBlock: Block, previousBlock: Block) : boolean => 
     }
 };
 
-// 아무것도 return 하지 않아서 void
 const addBlock = (candidateBlock: Block) : void => {
     if(isBlockValid(candidateBlock, getLatestBlock())){
         blockchain.push(candidateBlock);
@@ -84,6 +82,7 @@ const addBlock = (candidateBlock: Block) : void => {
 
 createNewBlock("second block");
 createNewBlock("third block");
+createNewBlock("fourth block")
 
 console.log(blockchain);
 
