@@ -1,1 +1,1 @@
-# ts_practice
+# type script practice
